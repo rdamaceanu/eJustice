@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Dosare</h1>
+    <ul class="list-group">
+        {% for dosar in dosare %}
+            <li class="list-group-item"><a href="dosar/{{dosar.id}}">{{dosar.title}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

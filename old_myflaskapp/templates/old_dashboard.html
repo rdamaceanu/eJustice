@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Dashboard <small>Welcome {{session.username}}</small></h1>
+    <br><br><br>
+    <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+              <div class="col-md-4">
+                <h2>Cauta Dosare</h2>
+                <p>Cauta in dosarele de pe portal.just.ro</p>
+                <p><a class="btn btn-secondary" href="/search" role="button">Cautare &raquo;</a></p>
+              </div>
+              <div class="col-md-4">
+                <h2>Dosarele tale</h2>
+                <p>Vezi lista ta de dosare. Dosarele selectate in sectiunea &laquo;Cauta Dosare&raquo; vor aparea aici</p>
+                <p><a class="btn btn-secondary" href="/dosare" role="button">Vezi Dosare &raquo;</a></p>
+              </div>
+              <div class="col-md-4">
+                <h2>Setari Cont</h2>
+                <p>Verifica datele contului</p>
+                <p><a class="btn btn-secondary" href="/settings" role="button">Setari &raquo;</a></p>
+              </div>
+            </div>
+        
+            <hr>
+        
+    </div> <!-- /container -->
+
+{% endblock %}

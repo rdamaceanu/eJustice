@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Dashboard <small>Welcome {{session.username}}</small></h1>
+    <br><br><br>
+
+<div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Cauta Dosare</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Cauta in dosarele </li>
+                <li>de pe portal.just.ro</li>
+                <li>&nbsp;</li>
+              </ul>
+              <p><a class="btn btn-lg btn-block btn-primary" href="/search" role="button">Cautare &raquo;</a></p>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Dosarele Tale</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Vezi lista ta de dosare. </li>
+                <li>Dosarele selectate in sectiunea </li>
+                <li>&laquo;Cauta Dosare&raquo; vor aparea aici</li>
+              </ul>
+              <p><a class="btn btn-lg btn-block btn-primary" href="/dosare" role="button">Vezi Dosare &raquo;</a></p>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Setari Cont</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Verifica datele contului</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>          
+              </ul>
+              <p><a class="btn btn-lg btn-block btn-primary" href="/settings" role="button">Setari &raquo;</a></p>
+            </div>
+          </div>
+        </div>
+</div><!-- /container -->
+{% endblock %}
